@@ -1,8 +1,12 @@
 import $ from 'jquery';
-import './style.css';
+import './styles/index.css';
+import meals from './scripts/meals';
+import render from './scripts/render'
 
 const main = () => {
+    meals.getMeals();
     render.render();
+    render.reset();
 }
 
 $(main)

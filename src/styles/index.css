@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+body {
+  font-family: arial;
+  background-color: lightblue;
+  background-image: url('../images/grey-woodgrain.jpg')
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'Krona One', arial;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  padding: 2%;
+}
+
+h3 {
+  font-family: 'Krona One', arial;
+  text-align: center;
+}
+
+hr {
+  width: 300px;
+  border: 1px solid black;
+  margin-bottom: 5%;
+}
+
+button {
+  margin: 0 4%;
+  background-color: white;
+  border: 1px solid black;
+  padding: 8px;
+}
+
+input {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: none;
+  padding: 1%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+}
+
+.block {
+  background-color: white;
+  border: 1px solid black;
+  padding: 1% 6% 6% 6%;
+  margin: 2%;
+}
+
+.submitcancel {
+  padding-top: 3%;
+  text-align: center;
+}
+
+.reset {
+  text-align: center;
+}
+
+.reset button {
+  padding: 1% 20%;
+}
+
+@media all and (min-width: 600px) {
+  .mealdetails, .group { 
+    flex-direction: row;
+  }
+  .submitcancel {
+    margin-left: 60%;
+  }
+  .block {
+    border: 1px solid black;
+    padding: 1% 3% 3% 3%;
+  }
+}
